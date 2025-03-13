@@ -1,0 +1,101 @@
+/* General body styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: 
+        url('space-top.jpg') no-repeat top, 
+        linear-gradient(to bottom, #000000, #3a0ca3, #9d4edd) no-repeat center, 
+        url('pixel-cityscape.png') no-repeat bottom;
+    background-size: cover, cover, contain;
+    background-attachment: fixed;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper ensures full page height */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and navigation */
+header {
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ff77ff;
+    text-shadow: 2px 2px 10px #ff00ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9d4edd;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff00ff;
+    color: white;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Keeps content centered */
+}
+
+/* Content box styling */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    text-align: center;
+}
+
+//* Ensure no gap between footer image and footer */
+.footer-image {
+    width: 100vw;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    display: block;  /* Ensures no extra space from inline behavior */
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(20, 20, 20, 0.8);
+    text-align: center;
+    color: #aaa;
+    margin: 0;
+    padding: 0;
+}
